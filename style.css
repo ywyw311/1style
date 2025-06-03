@@ -49,8 +49,8 @@
 
 @media (max-width: 768px) {
  .navcontain-mobile {
-  left : 0 !important;
-   right : 0 !important;
+    padding: 0 0 !important;
+  
  }
   
   .navbutton-mobile a {
