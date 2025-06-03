@@ -15,10 +15,10 @@
 
 .navbutton-mobile {
   display: flex;
-  justify-content: center;
+  justify-content:  flex-start;
   align-items: center;
   flex-wrap: nowrap;
-  width: 120%;
+  width: 100%;
   padding: 10px 0;
   margin: 0 auto;
   gap: 0;
@@ -48,7 +48,7 @@
 
 @media (max-width: 768px) {
   .navcontain-mobile {
-    padding: 0 !important;
+
     display: inline-block;
       top: 0px!important;
   left: 0px!important;
@@ -59,6 +59,8 @@
     font-size: 13px !important;
     padding: 7px 0 !important;
     margin: 0 5px !important; 
+    justify-content: flex-start !important;
+    width: 100% !important;
   }
 
   .navbutton-mobile a:nth-child(3) {
