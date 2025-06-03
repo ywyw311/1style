@@ -5,7 +5,7 @@
   right: 0px;
   z-index: 1000;
   width: 100%;
-  margin-left: -20px;
+
   background-color: white;
   border-bottom: 1px solid #eee;
   box-sizing: border-box;
@@ -50,7 +50,7 @@
   .navcontain-mobile {
     padding: 0 !important;
     display: inline-block;
-      top: 50px!important;
+      top: 00px!important;
   left: 0px!important;
   right: 0px!important;
   }
