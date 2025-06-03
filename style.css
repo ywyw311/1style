@@ -52,9 +52,12 @@ margin-left: -20px;
     padding: 0 0 !important;
     margin-left: -20px;
  }
-  
+  .navbutton-mobile {
+  gap: 2px !important; 
+}
+    
   .navbutton-mobile a {
     font-size: 13px !important;
-    padding: 4px 0 !important;
+    padding: 7px 0 !important;
   }
 }
