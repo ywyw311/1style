@@ -5,8 +5,7 @@
   right: 0;
   z-index: 1000;
   width: 100vw;
-  margin: 80;
-  padding: 80;
+  justify-content: center;
   background-color: white;
   border-bottom: 1px solid #eee;
   box-sizing: border-box;
