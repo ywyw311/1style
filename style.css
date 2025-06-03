@@ -6,6 +6,14 @@ html, body {
   overflow-x: hidden;
 }
 
+
+main {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  background-color: white !important;
+}
+
 .navcontain-mobile {
   position: absolute;
   top: 50px;
