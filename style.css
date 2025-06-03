@@ -53,20 +53,21 @@ margin-left: -20px;
  display : inline-block ; 
 
  }
-  .navbutton-mobile {
-  gap: 2px !important; 
-}
+
     
   .navbutton-mobile a {
     font-size: 13px !important;
 
-    .navbutton-mobile a:nth-child(3) {
+    padding: 7px 0 !important;
+  }
+
+      .navbutton-mobile a:nth-child(3) {
   margin-right: 2px!important;
 }
 
 .navbutton-mobile a:nth-child(4) {
   margin-left: 2px!important;
 }
-    padding: 7px 0 !important;
-  }
+
+  
 }
