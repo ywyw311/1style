@@ -55,14 +55,14 @@
   .navbutton-mobile a {
     font-size: 13px !important;
     padding: 7px 0 !important;
-    margin: 0 6px !important; 
+    margin: 0 5px !important; 
   }
 
   .navbutton-mobile a:nth-child(3) {
-    margin-right: 3px !important; 
+    margin-right: 4px !important; 
   }
 
   .navbutton-mobile a:nth-child(4) {
-    margin-left: 3px !important; 
+    margin-left: 4px !important; 
   }
 }
