@@ -57,7 +57,7 @@ main {
 
 .navbutton-mobile a:first-child {
   margin-left: -17px !important;
-    padding-left: 20 !important;
+    padding-left: 0 !important;
 }
 
 @media (max-width: 768px) {
