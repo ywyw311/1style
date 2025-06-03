@@ -1,11 +1,11 @@
 .navcontain {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
+  top: 50;
+  left: 50;
   right: 0;
   z-index: 1000;
   width: 100vw;
-  justify-content: center;
+
   background-color: white;
   border-bottom: 1px solid #eee;
   box-sizing: border-box;
