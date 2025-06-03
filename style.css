@@ -1,7 +1,7 @@
 .navcontain {
-  position: relative;
-  top: 50;
-  left: 50;
+  position: fixed;
+  top: 200;
+  left: 2000;
   right: 0;
   z-index: 1000;
   width: 100vw;
@@ -15,7 +15,7 @@
 
   
 .navbutton {
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
