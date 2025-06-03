@@ -1,13 +1,12 @@
 
-
 .navcontain {
   position: fixed;
-  top: 50;
-  left: 50;
+  top: 0;
+  left: 0;
   right: 0;
   z-index: 1000;
   width: 100%;
-  padding: 5px 10;
+  padding: 0;
   background-color: white;
   text-align: center;
   border-bottom: 1px solid #eee;
@@ -16,37 +15,41 @@
   -webkit-backface-visibility: hidden;
 }
 
+
 .navbutton {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;  
   align-items: center;
   flex-wrap: nowrap;
+  padding: 0 10px;
+  gap: 0;
 }
 
+
 .navbutton a {
-  padding: 2px 2px;
-  font-size: 8px;
+  flex: 1;                       
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
   color: black;
   background-color: white;
   text-decoration: none;
-  border-radius: 20px;
-  transition: background-color 0.3s;
+  border-radius: 0;
   white-space: nowrap;
+  box-sizing: border-box;
+  transition: background-color 0.3s;
 }
+
 
 .navbutton a:hover {
   background-color: #f8d288;
   color: white;
 }
 
-@media (max-width: 768px) {
-  .navbutton {
-    padding: 0;
-    justify-content: flex-start;
-  }
 
+@media (max-width: 768px) {
   .navbutton a {
-    padding: 5px 5px;
-    font-size: 10px !important;
+    font-size: 13px;
+    padding: 10px 0;
   }
 }
