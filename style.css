@@ -35,7 +35,6 @@ main {
   flex-wrap: nowrap;
   width: 100% !important;
   padding: 10px 0 !important;
-  padding-left: 0 !important;
   margin: 0 !important;
   gap: 0;
   box-sizing: border-box;
@@ -58,6 +57,7 @@ main {
 
 .navbutton-mobile a:first-child {
   margin-left: 0 !important;
+    padding-left: 0 !important;
 }
 
 @media (max-width: 768px) {
