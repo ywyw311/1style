@@ -40,6 +40,13 @@ margin-left: -20px;
   transition: background-color 0.3s;
 }
 
+.navbutton-mobile a:nth-child(3) {
+  margin-right: 4px; 
+}
+
+.navbutton-mobile a:nth-child(4) {
+  margin-left: 4px;
+}
 
 .navbutton-mobile a:hover {
   background-color: #f8d288;
