@@ -1,5 +1,5 @@
 .navcontain-mobile {
-  position: fixed;
+  position: absolute;
   top: 200;
   left: 2000;
   right: 0;
