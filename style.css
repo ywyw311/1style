@@ -50,7 +50,7 @@ margin-left: -20px;
 @media (max-width: 768px) {
  .navcontain-mobile {
     padding: 0 0 !important;
-    margin-left: -20px;
+ display : block ; 
  }
   .navbutton-mobile {
   gap: 2px !important; 
