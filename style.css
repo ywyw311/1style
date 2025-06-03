@@ -1,11 +1,11 @@
 .navcontain-mobile {
   position: absolute;
   top: 200;
-  left: 2000;
-  right: 0;
+  left: 200;
+  right: 200;
   z-index: 1000;
   width: 100%;
- padding: 1 1 ;
+
   background-color: white;
   border-bottom: 1px solid #eee;
   box-sizing: border-box;
