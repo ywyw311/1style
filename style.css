@@ -1,4 +1,4 @@
-.navcontain {
+.navcontain-mobile {
   position: fixed;
   top: 200;
   left: 2000;
@@ -14,7 +14,7 @@
 }
 
   
-.navbutton {
+.navbutton-mobile {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +26,7 @@
 }
 
 
-.navbutton a {
+.navbutton-mobile a {
   flex: 1;
   text-align: center;
   padding: 10px 0;
@@ -41,14 +41,14 @@
 }
 
 
-.navbutton a:hover {
+.navbutton-mobile a:hover {
   background-color: #f8d288;
   color: white;
 }
 
 
 @media (max-width: 768px) {
-  .navbutton a {
+  .navbutton-mobile a {
     font-size: 12px;
     padding: 5px 0;
   }
