@@ -22,7 +22,7 @@
   width: 100%;
   padding: 0;
   margin: 0 auto;
-  gap: 2px; 
+  gap: 4px; 
 }
 
 
@@ -50,6 +50,6 @@
 @media (max-width: 768px) {
   .navbutton a {
     font-size: 12px;
-    padding: 9px 0;
+    padding: 5px 0;
   }
 }
