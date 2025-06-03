@@ -49,7 +49,7 @@
 
 @media (max-width: 768px) {
   .navbutton-mobile a {
-    font-size: 13px;
-    padding: 10px 0;
+    font-size: 13px !important;
+    padding: 10px 0 !important;
   }
 }
