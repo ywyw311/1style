@@ -48,8 +48,13 @@
 
 
 @media (max-width: 768px) {
+ .navcontain-mobile {
+  left : 0 !important;
+   right : 0 !important;
+ }
+  
   .navbutton-mobile a {
     font-size: 13px !important;
-    padding: 10px 0 !important;
+    padding: 7px 0 !important;
   }
 }
