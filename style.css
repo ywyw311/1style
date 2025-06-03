@@ -1,5 +1,5 @@
 html, body {
-  margin-left: -10px ;
+  margin-left: 0px ;
   padding: 0;
   width: 100%;
   background-color: white;
@@ -8,7 +8,7 @@ html, body {
 
 
 main {
-  margin-left: -10px !important;
+  margin-left: 0px !important;
   padding: 0 !important;
   width: 100% !important;
   background-color: white !important;
@@ -56,7 +56,7 @@ main {
 }
 
 .navbutton-mobile a:first-child {
-  margin-left: -10px !important;
+  margin-left: 0px !important;
     padding-left: 0 !important;
 }
 
