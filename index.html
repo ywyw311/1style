@@ -533,7 +533,7 @@
 /* tbody 움직이기 */
 .table-slide tbody{
     display:block;
-    animation:scrollUp 25s steps(6) infinite;
+    animation:scrollUp 30s steps(6, end) infinite;
 }
 
 /* tr 유지 */
@@ -866,7 +866,8 @@
     justify-content:center;
 }
 .review-wrap{
-    width:1590px;
+    width:100%;
+    max-width:1590px;
     overflow:hidden;
     margin:0 auto;
 }
@@ -877,13 +878,13 @@
 
     width:max-content;
   will-change:transform;
-    animation:cardSlide 24s infinite;
+    animation:cardSlide 24s infinite linear;
 }
 
 /* 카드 */
 .review-card{
-    width:510px;
-    flex-shrink:0;
+    width:calc((100% - 60px) / 3);
+    max-width:510px;
 
     flex-shrink:0;
 
@@ -1246,7 +1247,7 @@
 .site-footer{
     width:100%;
     text-align:center;
-    padding:35px 20px 45px;
+    padding:35px 20px 120px;
     box-sizing:border-box;
     background:#b8e5e0;
 }
