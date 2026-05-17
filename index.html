@@ -88,8 +88,8 @@
     }
 
     .top-menu ul li a{
-        font-size:20px;
-        padding:10px 20px;
+        font-size:14px;
+        padding:8px 14px;
     }
 }
 
@@ -160,7 +160,11 @@
 
   <!-- 진행방법 -->
   <section class="step-section reveal">
-  <img src="/images/how.png">
+<!-- PC 이미지 -->
+<img src="/images/how.png" class="pc-img">
+
+<!-- 모바일 이미지 -->
+<img src="/images/how-mobile.png" class="mobile-img">
      <style>
       .step-section{
     width:100%;
@@ -179,6 +183,27 @@
     height:auto;
 
     display:block;
+}
+      /* 기본 */
+.pc-img{
+    display:block;
+}
+
+.mobile-img{
+    display:none;
+}
+
+/* 모바일 */
+@media screen and (max-width:768px){
+
+    .pc-img{
+        display:none;
+    }
+
+    .mobile-img{
+        display:block;
+    }
+
 }
       </style>
 
@@ -556,31 +581,61 @@
 </style>
 <!-- 스미싱 예방 -->
 <section class="safe-section reveal">
-<img src="/images/dangertitle.png">
- <img src="/images/dangertext.png">
+
+  <!-- PC용 -->
+  <div class="safe-pc">
+    <img src="/images/dangertitle.png">
+    <img src="/images/dangertext.png">
   </div>
-  <style>
-      .safe-section{
+
+  <!-- 모바일용 -->
+  <div class="safe-mobile">
+    <img src="/images/danger-mobile.png">
+  </div>
+
+</section>
+
+.safe-section{
     width:100%;
     background:#b8e5e0;
 
     display:flex;
-          flex-direction:column; 
-    justify-content:center; /* 가로 중앙 */
-    align-items:center;     /* 세로 중앙 */
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
 
     padding:30px 0;
 }
 
-/* 이미지 */
+/* 이미지 공통 */
 .safe-section img{
     max-width:100%;
     height:auto;
-
     display:block;
 }
-      </style>
-</section>
+
+/* 기본 */
+.safe-pc{
+    display:block;
+}
+
+.safe-mobile{
+    display:none;
+}
+
+/* 모바일 */
+@media screen and (max-width:768px){
+
+    .safe-pc{
+        display:none;
+    }
+
+    .safe-mobile{
+        display:block;
+    }
+
+}
 
 <!-- 후기 슬라이드 섹션 -->
 <section id="review" class="review-section reveal">
@@ -908,15 +963,73 @@
 }
 </style>
 
+
+
 <!-- 문의 배너 -->
 <div class="contact-wrap">
-  <section id="call"class="hero-section reveal">
-    <img src="/images/call.jpg">
-    </section>
+
+  <section id="call" class="hero-section reveal">
+
+    <div class="contact-image-box">
+
+      <!-- 실제 이미지 -->
+      <img src="/images/call.jpg">
+
+      <!-- 왼쪽 전화 -->
+      <a href="tel:01073866610" class="call-area"></a>
+
+      <!-- 오른쪽 문자 -->
+      <a href="sms:01073866610" class="sms-area"></a>
+
+    </div>
+
+  </section>
+
+ .contact-image-box{
+    position:relative;
+    width:100%;
+    max-width:1400px;
+}
+
+.contact-image-box img{
+    width:100%;
+    display:block;
+}
+
+/* 기본은 클릭 막기 */
+.call-area,
+.sms-area{
+    display:none;
+}
+
+/* 모바일에서만 활성화 */
+@media screen and (max-width:768px){
+
+    .call-area,
+    .sms-area{
+        display:block;
+
+        position:absolute;
+        top:0;
+        width:50%;
+        height:100%;
+        z-index:10;
+    }
+
+    /* 왼쪽 전화 */
+    .call-area{
+        left:0;
+    }
+
+    /* 오른쪽 문자 */
+    .sms-area{
+        right:0;
+    }
+
+}
+ 
 
 </div>
-
-
 <style>
 .info-banner{
     display:flex;
@@ -1170,3 +1283,75 @@ window.addEventListener('scroll', revealOnScroll);
 revealOnScroll();
 
 </script>
+
+<!-- 모바일 하단 고정 메뉴 -->
+<div class="mobile-fixed-menu">
+
+  <!-- 전화 -->
+  <a href="tel:01073866610" class="fixed-call">
+    📞전화 문의
+  </a>
+
+  <!-- 문자 -->
+  <a href="sms:01073866610" class="fixed-sms">
+    💌문자 문의
+  </a>
+
+</div>
+
+<style>
+
+/* 기본 숨김 */
+.mobile-fixed-menu{
+    display:none;
+}
+
+/* 모바일에서만 */
+@media screen and (max-width:768px){
+
+.mobile-fixed-menu{
+
+    position:fixed;
+
+    bottom:0;
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    z-index:9999;
+}
+
+/* 버튼 공통 */
+.mobile-fixed-menu a{
+
+    width:50%;
+    height:70px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+
+    font-size:32px;
+    font-weight:700;
+
+    color:#222;
+
+    box-sizing:border-box;
+}
+
+/* 전화 */
+.fixed-call{
+    background:#efd085;
+}
+
+/* 문자 */
+.fixed-sms{
+    background:#b7dcb9;
+}
+
+}
+</style>
