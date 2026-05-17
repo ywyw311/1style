@@ -1,11 +1,15 @@
- <div class="ometicket-wrap">
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<div class="ometicket-wrap">
 
   <!-- 상단 -->
   <section class="top-banner">
     <img src="/images/naversearch.png">
      
-    
-<style>
+  </section>
+    <style>
       .top-banner{
   width:100vw;
     margin-left:calc(50% - 50vw);
@@ -27,8 +31,6 @@
     display:block;
 }
       </style>
-  </section>
-    
 
     
 <style>
@@ -110,7 +112,7 @@
   <section class="hero-section reveal">
     <img src="/images/main.png">
     
-
+</section>
       <style>
       .hero-section{
     width:100%;
@@ -157,19 +159,40 @@
 }
       </style>
  
-  </section>
+
 
   <!-- 진행방법 -->
-  <section class="step-section reveal">
-<!-- PC 이미지 -->
-<img src="/images/how.png" class="pc-only">
+<section class="step-section reveal">
 
-<!-- 모바일 이미지 -->
-<img src="/images/how-mobile.png" class="mobile-only">
-  </section>
-  
+    <!-- PC 이미지 -->
+    <img src="/images/how.png" class="pc-only">
+
+    <!-- 모바일 이미지 -->
+    <img src="/images/how-mobile.png" class="mobile-only">
+
+
+
 <style>
 
+.step-section{
+    width:100%;
+    background:#b8e5e0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:30px 0;
+}
+
+/* 이미지 공통 */
+.step-section img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+/* 기본 */
 .pc-only{
     display:block;
 }
@@ -192,7 +215,6 @@
 }
 
 </style>
-
 
 <!-- 카카오톡 친구추가 -->
 <section id="kakao" class="kakao-guide reveal">
@@ -601,22 +623,23 @@
 
 /* 기본 */
 .safe-pc{
-    display:block;
+    display:block !important;
 }
 
 .safe-mobile{
-    display:none;
+    display:none !important;
 }
 
 /* 모바일 */
 @media screen and (max-width:768px){
 
     .safe-pc{
-        display:none;
+        display:none !important;
     }
 
     .safe-mobile{
-        display:block;
+        display:block !important;
+        width:100%;
     }
 
 }
@@ -1301,7 +1324,6 @@ revealOnScroll();
 .mobile-fixed-menu{
 
     position:fixed;
-
     bottom:0;
     left:0;
 
@@ -1309,14 +1331,14 @@ revealOnScroll();
 
     display:flex;
 
-    z-index:9999;
+    z-index:99999;
 }
 
 /* 버튼 공통 */
 .mobile-fixed-menu a{
 
     width:50%;
-    height:70px;
+    height:60px;
 
     display:flex;
     justify-content:center;
@@ -1324,7 +1346,7 @@ revealOnScroll();
 
     text-decoration:none;
 
-    font-size:32px;
+    font-size:18px;
     font-weight:700;
 
     color:#222;
@@ -1343,4 +1365,5 @@ revealOnScroll();
 }
 
 }
+
 </style>
