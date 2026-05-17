@@ -195,16 +195,16 @@
     margin:0 auto;
 }
 
-/* PC */
+/* 기본 */
 .pc-only{
-    display:block;
+    display:block !important;
+}
+
+.mobile-only{
+    display:none !important;
 }
 
 /* 모바일 */
-.mobile-only{
-    display:none;
-}
-
 @media screen and (max-width:768px){
 
     .pc-only{
@@ -558,30 +558,38 @@
 /* 모바일 */
 @media screen and (max-width:768px){
 
+.status-section{
+    padding:40px 10px;
+}
+
 .section-title{
-    font-size:42px;
+    font-size:34px;
+    margin-bottom:25px;
 }
 
 .status-table th{
-    font-size:18px;
-    padding:18px 5px;
+    font-size:15px;
+    padding:12px 4px;
 }
 
 .status-table td{
-    font-size:16px;
-    padding:18px 5px;
+    font-size:14px;
+    padding:12px 4px;
+}
+
+.table-slide tr{
+    height:60px;
 }
 
 .done,
 .ing{
-    width:90px;
-    height:38px;
-
-    font-size:14px;
+    width:72px;
+    height:30px;
+    font-size:11px;
 }
 
 .table-slide{
-    height:220px;
+    height:180px;
 }
 
 }
@@ -947,32 +955,54 @@
 /* 모바일 */
 @media screen and (max-width:768px){
 
+.review-section{
+    padding:40px 0;
+}
+
+.review-wrap{
+    width:100%;
+}
+
+.review-track{
+    gap:15px;
+}
+
 .review-card{
-    width:320px;
-    min-height:520px;
-    padding:50px 25px;
+    width:260px;
+    min-height:390px;
+
+    padding:30px 18px;
+
+    border-radius:20px;
 }
 
 .quote{
-    font-size:55px;
+    font-size:42px;
+    margin-bottom:10px;
 }
 
 .review-text{
-    font-size:22px;
+    font-size:16px;
+    line-height:1.6;
+    min-height:160px;
+
+    margin-bottom:25px;
 }
 
 .review-card h3{
-    font-size:28px;
+    font-size:20px;
+    margin-bottom:8px;
 }
 
 .review-card span{
-    font-size:18px;
+    font-size:14px;
 }
 
 .review-card img{
-    width:85px;
-    height:85px;
+    width:65px;
+    height:65px;
 }
+
 }
 </style>
 
@@ -1091,18 +1121,32 @@
 /* 모바일 */
 @media screen and (max-width:768px){
 
-    .info-banner{
-        flex-direction:column;
-    }
+.info-banner{
+    flex-direction:column;
+}
 
-    .info-left,
-    .info-right{
-        width:100%;
-    }
+.info-left,
+.info-right{
+    width:100%;
+}
 
-    .info-left{
-        padding:20px 0;
-    }
+.info-left{
+    padding:10px 0;
+}
+
+.info-left img{
+    width:65%;
+}
+
+.info-right{
+    padding:0;
+}
+
+.info-right img{
+    width:100%;
+    display:block;
+}
+
 }
 </style>
 
@@ -1322,25 +1366,41 @@ revealOnScroll();
     display:none;
 }
 
-/* 모바일에서만 */
+/* 모바일 */
 @media screen and (max-width:768px){
 
 .mobile-fixed-menu{
 
     position:fixed !important;
 
-    bottom:0 !important;
-    left:0 !important;
+    bottom:0;
+    left:0;
 
     width:100%;
 
     display:flex !important;
 
-    z-index:999999 !important;
+    z-index:999999;
 }
+
 /* 버튼 공통 */
 .mobile-fixed-menu a{
-    font-size:16px;
+
+    width:50%;
+    height:65px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+
+    font-size:17px;
+    font-weight:700;
+
+    color:#222;
+
+    box-sizing:border-box;
 }
 
 /* 전화 */
