@@ -79,20 +79,21 @@
 @media screen and (max-width:768px){
 
     .top-menu{
-        padding:20px 0;
+        padding:12px 0;
     }
 
     .top-menu ul{
-        gap:25px;
-        flex-wrap:wrap;
+        gap:8px;
+        flex-wrap:nowrap;
     }
 
     .top-menu ul li a{
-        font-size:14px;
-        padding:8px 14px;
+        font-size:11px;
+        padding:6px 10px;
+        white-space:nowrap;
     }
-}
 
+}
 </style>
 
 
@@ -161,55 +162,36 @@
   <!-- 진행방법 -->
   <section class="step-section reveal">
 <!-- PC 이미지 -->
-<img src="/images/how.png" class="pc-img">
+<img src="/images/how.png" class="pc-only">
 
 <!-- 모바일 이미지 -->
-<img src="/images/how-mobile.png" class="mobile-img">
-     <style>
-      .step-section{
-    width:100%;
-    background:#b8e5e0;
+<img src="/images/how-mobile.png" class="mobile-only">
+  </section>
+  
+<style>
 
-    display:flex;
-    justify-content:center; /* 가로 중앙 */
-    align-items:center;     /* 세로 중앙 */
-
-    padding:30px 0;
-}
-
-/* 이미지 */
-.step-section img{
-    max-width:100%;
-    height:auto;
-
-    display:block;
-}
-      /* 기본 */
-.pc-img{
+.pc-only{
     display:block;
 }
 
-.mobile-img{
+.mobile-only{
     display:none;
 }
 
 /* 모바일 */
 @media screen and (max-width:768px){
 
-    .pc-img{
-        display:none;
+    .pc-only{
+        display:none !important;
     }
 
-    .mobile-img{
-        display:block;
+    .mobile-only{
+        display:block !important;
     }
 
 }
-      </style>
 
-  </section>
-
-</div>
+</style>
 
 
 <!-- 카카오톡 친구추가 -->
@@ -595,6 +577,8 @@
 
 </section>
 
+<style>
+
 .safe-section{
     width:100%;
     background:#b8e5e0;
@@ -636,6 +620,8 @@
     }
 
 }
+
+</style>
 
 <!-- 후기 슬라이드 섹션 -->
 <section id="review" class="review-section reveal">
@@ -985,7 +971,11 @@
 
   </section>
 
- .contact-image-box{
+</div>
+
+<style>
+
+.contact-image-box{
     position:relative;
     width:100%;
     max-width:1400px;
@@ -1027,9 +1017,8 @@
     }
 
 }
- 
 
-</div>
+</style>
 <style>
 .info-banner{
     display:flex;
