@@ -112,7 +112,7 @@
   <section class="hero-section reveal">
     <img src="/images/main.png">
     
-</section>
+
       <style>
       .hero-section{
     width:100%;
@@ -138,6 +138,8 @@
   <!-- 상담 -->
   <section class="consult-section reveal">
     <img src="/images/kind.png">
+  </section>
+ 
           <style>
       .consult-section{
     width:100%;
@@ -161,7 +163,7 @@
  
 
 
-  <!-- 진행방법 -->
+ <!-- 진행방법 -->
 <section class="step-section reveal">
 
     <!-- PC 이미지 -->
@@ -170,7 +172,7 @@
     <!-- 모바일 이미지 -->
     <img src="/images/how-mobile.png" class="mobile-only">
 
-
+</section>
 
 <style>
 
@@ -187,21 +189,22 @@
 
 /* 이미지 공통 */
 .step-section img{
+    display:block;
     max-width:100%;
     height:auto;
-    display:block;
+    margin:0 auto;
 }
 
-/* 기본 */
+/* PC */
 .pc-only{
     display:block;
 }
 
+/* 모바일 */
 .mobile-only{
     display:none;
 }
 
-/* 모바일 */
 @media screen and (max-width:768px){
 
     .pc-only{
@@ -210,6 +213,7 @@
 
     .mobile-only{
         display:block !important;
+        width:100%;
     }
 
 }
@@ -623,22 +627,22 @@
 
 /* 기본 */
 .safe-pc{
-    display:block !important;
+    display:block;
 }
 
 .safe-mobile{
-    display:none !important;
+    display:none;
 }
 
 /* 모바일 */
 @media screen and (max-width:768px){
 
     .safe-pc{
-        display:none !important;
+        display:none ;
     }
 
     .safe-mobile{
-        display:block !important;
+        display:block ;
         width:100%;
     }
 
@@ -1323,35 +1327,20 @@ revealOnScroll();
 
 .mobile-fixed-menu{
 
-    position:fixed;
-    bottom:0;
-    left:0;
+    position:fixed !important;
+
+    bottom:0 !important;
+    left:0 !important;
 
     width:100%;
 
-    display:flex;
+    display:flex !important;
 
-    z-index:99999;
+    z-index:999999 !important;
 }
-
 /* 버튼 공통 */
 .mobile-fixed-menu a{
-
-    width:50%;
-    height:60px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    text-decoration:none;
-
-    font-size:18px;
-    font-weight:700;
-
-    color:#222;
-
-    box-sizing:border-box;
+    font-size:16px;
 }
 
 /* 전화 */
@@ -1363,6 +1352,24 @@ revealOnScroll();
 .fixed-sms{
     background:#b7dcb9;
 }
+
+}
+
+ @media screen and (max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .ometicket-wrap{
+        width:100%;
+        max-width:100%;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
 
 }
 
