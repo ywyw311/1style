@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://오예티켓.com/sitemap.xml
